@@ -14,9 +14,8 @@ const userPosts = id=>{
                           "</div>";
             let postDiv = `<div class='post'>`;
             let title = `<h5>${post.title}</h5>`
-            let bodySummary = `<p class='post-body'>${post.body.slice(0, 50)}...</p>`;
-            postDiv += title + bodySummary + `</div>`;
-            let readMore = `<a class='read-more' href='post.html?postId=${post.id}'>Read more</a>`;
+            postDiv += title + `</div>`;
+            let readMore = `<a class='read-more' href='post.html?postId=${post.id}'>Read</a>`;
             let completeCard = card + postDiv + readMore + "</div>";
             cardContainer+= completeCard;
         });
